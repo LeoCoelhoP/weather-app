@@ -1,0 +1,20 @@
+// const nextDaysHeading = document.querySelectorAll('.next-days');
+const nextDaysImage = document.querySelectorAll('.next-days img');
+const nextDaysMinTemp = document.querySelectorAll('.min-temp-nd');
+const nextDaysMaxTemp = document.querySelectorAll('.max-temp-nd');
+const nextDaysDate = document.querySelectorAll('.date-heading');
+
+class NextDaysViews {
+  setNextDaysInfos(nextDaysData) {
+    console.log(nextDaysData);
+    nextDaysData.forEach((day, i) => {
+      nextDaysImage[i].src = `../src/icons/${day[1]}`;
+      nextDaysMinTemp[i].textContent = day[0].minTemp;
+      nextDaysMaxTemp[i].textContent = day[0].maxTemp;
+      nextDaysDate[i].textContent = `${day[0].day}/${day[0].month}`;
+    });
+    return this;
+  }
+}
+
+export default new NextDaysViews();

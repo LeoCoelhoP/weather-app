@@ -1,0 +1,27 @@
+:root {
+  --container-border: 150px;
+  --blur-percantage: 50px;
+  --main-bg-color: #4c4c4c;
+}
+
+.main-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100svh - var(--container-border));
+  width: calc(100svw - var(--container-border));
+  background-color: var(--main-bg-color);
+  border-radius: 40px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 1);
+}
+
+.main-container.overlayed {
+  filter: blur(50px);
+}
+
+.main-container {
+  transition: filter 1s;
+}

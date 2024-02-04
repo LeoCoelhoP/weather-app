@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="main-container overlayed">
+      <div class="secondary-container">
+        <div class="search-container">
+          <form>
+            <input
+              type="text"
+              class="search"
+              name="search"
+              placeholder="Busque por uma cidade..."
+            />
+          </form>
+          <img
+            class="search-btn"
+            src="https://www.svgrepo.com/show/522651/search-globe.svg"
+            height="30px"
+          />
+        </div>
+        <div class="current-weather">
+          <h1 class="city-name"></h1>
+          <img class="current-condition" src="" height="250px" />
+          <h1 class="current-temperature"></h1>
+        </div>
+      </div>
+
+      <div class="tertiary-container">
+        <div class="next-days-container">
+          <div><h1 class="next-days-heading">Proximos dias...</h1></div>
+          <div class="next-days-content">
+            <div class="day-one next-days">
+              <h1 class="date-heading"></h1>
+              <img src="" height="100px" width="100px" />
+              <h1>
+                <span class="min-temp-nd"></span>ºC -
+                <span class="max-temp-nd"></span>ºC
+              </h1>
+            </div>
+            <div class="day-two next-days">
+              <h1 class="date-heading"></h1>
+              <img src="" height="100px" width="100px" />
+              <h1>
+                <span class="min-temp-nd"></span>ºC -
+                <span class="max-temp-nd"></span>ºC
+              </h1>
+            </div>
+            <div class="day-three next-days">
+              <h1 class="date-heading"></h1>
+              <img src="" height="100px" width="100px" />
+              <h1>
+                <span class="min-temp-nd"></span>ºC -
+                <span class="max-temp-nd"></span>ºC
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="today">
+          <h1 class="today-heading">Hoje</h1>
+          <div class="today-container">
+            <div class="wind-velocity">
+              <h1>Velocidade do vento: <span class="wind-speed"></span>Km/h</h1>
+            </div>
+            <div class="today-container-temperature">
+              <img />
+              <h1>
+                Temperatura (Min - Max): <span class="min-temp"></span>ºC -
+                <span class="max-temp"></span>ºC
+              </h1>
+            </div>
+            <div class="today-container-temperature">
+              <img />
+              <h1>Sensação Termica: <span class="sensation"></span>ºC</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
